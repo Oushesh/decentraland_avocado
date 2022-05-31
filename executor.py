@@ -8,6 +8,7 @@
 import os
 import wget
 import zipfile
+import shutil
 
 url = 'https://github.com/decentraland-scenes/avocado/raw/main/Avocado.zip'
 
@@ -37,14 +38,18 @@ if os.path.exists(filename):
     os.remove(filename)
     print ('File deleted successfully')
 
+#os.makedirs("models",exist_ok=True)
+src_folder = dst_folder_name
+dst_folder = "models"
 
-src_folder = ""
-dst_folder = ""
-def copy_contents(src_folder,dst_folder):
-    return None
+#Draft and test if the src_folder and dst_folder exists:
 
-copy_contents(src_folder,dst_folder)
+assert (os.path.isdir(src_folder)==True)
+
+shutil.copytree(src_folder, dst_folder)
 
 ## Call this function to the bash file and test it. Awesome work.
 ##How do we update the function here?
-## Versioning
+## TODO: Versioning and the how of things
+
+## how models should be versioned
