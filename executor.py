@@ -52,4 +52,4 @@ shutil.copytree(src_folder, dst_folder)
 ##How do we update the function here?
 ## TODO: Versioning and the how of things
 
-## how models should be versioned
+## how models should be versioned + Bash script To be added.
