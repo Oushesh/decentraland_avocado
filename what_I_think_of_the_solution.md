@@ -2,7 +2,7 @@
 
 ## Or we do the same as was done before but instead I write a new bash script file:
 
-## just now I use a bash script to run all the dcl language tests: 
+## just now I use a bash script to run all the dcl language tests:
 
 ## write a script in python that will download the file in *.zip: extract
     1. DOwnload the zip file using curl
@@ -10,9 +10,9 @@
     3. shutil
     4. then use bash script to automatically update the models: and thus update the git.
 
-    5. Next time user wants to download the models he can do so: 
+    5. Next time user wants to download the models he can do so:
 
-    6. On the long run lets make the models should be served onto s3 storage. (serve the glb models on s3: then 
+    6. On the long run lets make the models should be served onto s3 storage. (serve the glb models on s3: then
     download them from server --> also for update we check the versioning of the files here:
 
     7. AUtomatic script to update on our side --> user gets it then clones the new git run the bash
@@ -22,6 +22,6 @@
 
 ## Versadex send email to server: https://www.youtube.com/watch?v=TZL-WFzvDJg
 
-## Check my django and onnx based runtime inference in the web. 
+## Check my django and onnx based runtime inference in the web.
 
 ## Avocado: 
