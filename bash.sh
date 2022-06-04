@@ -4,4 +4,4 @@ echo 'Downloading Unzipping the smart item'
 
 python executor.py
 
-#python aws_cdk_uploader.py
+python aws_cdk_uploader.py
