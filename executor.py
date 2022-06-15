@@ -33,7 +33,7 @@ with zipfile.ZipFile(filename,'r') as zip_ref:
 #Add copy the contents from 1 folder to the other:
 #Delete the old zip file:
 
-filename = "Avocado.zip"
+filename = url.split("/")[-1]
 if os.path.exists(filename):
     os.remove(filename)
     print ('File deleted successfully')
@@ -43,13 +43,6 @@ src_folder = dst_folder_name
 dst_folder = "models"
 
 #Draft and test if the src_folder and dst_folder exists:
-
 assert (os.path.isdir(src_folder)==True)
-
 shutil.copytree(src_folder, dst_folder)
-
-## Call this function to the bash file and test it. Awesome work.
-##How do we update the function here?
-## TODO: Versioning and the how of things
-
-## how models should be versioned + Bash script To be added.
+shutil.rmtree(src_folder)
